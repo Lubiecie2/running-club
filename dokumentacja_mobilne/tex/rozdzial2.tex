@@ -1,0 +1,34 @@
+\newpage
+\section{Określenie wymagań szczegółowych}		%2
+%Napisać gdzie używa się tego algorytmu
+%Opisać sposób działania programu/algorytmu
+%Napisać spsoób wykorzystania algorytmu po przez wykonanie przykładu (np. mnożenie macierzy - wykonać ręcznie przykład z mnożeniem macierzy pokazujący jak mnoży się macierz ręcznie)
+%Jeśli zadanie zakłada przedstawienie jakiegoś narzędzia (np. git, AI) należy opisać narzędzie
+
+\subsection{\large{Język programowania}}
+\hspace*{1em}Język w którym będzie programowana aplikacja to Kotlin. Język ten jest nowoczesnym językiem ogólnego przeznaczenia w pełni kompatybilnym z Javą. Kotlin jest językiem programowania na platformę Android. Kotlin działa na JVM co oznacza że można go bez problemu używać razem z istniejącym kodem Javy. Zalety Kotlina: Nowoczesne funkje języka, Wysoka kompatybilność z Javą, Lepsza wydajność i efektywność, Bezpieczeństwo i stabilność.\\
+\\
+\hspace*{1em}Podczas tworzenia projektu będziemy korzystali ze środowiska programistycznego Android studio. Środowisko to pozwala na projektowanie, pisanie, testowanie i debugowanie aplikacji mobilnych. Obsługuje różne języki programowania, w tym Kotlin.
+
+\newpage
+\subsection{\large Podstawowe funkcje aplikacji} 
+\begin{itemize}
+    \item \textbf{Przebyty dystans} - Aplikacja ma za zadanie mierzyć dystans jaki użytkownik przebiegł podczas jednego treningu. Aby wykonać ten pomiar wymagane jest użycia czujnika GPS, który jest jednym z najdokładniejszych narzędzi do mierzenia przebytego dystansu.
+    \item \textbf{Ilość kroków}- Aplikacja ma zliczać ilość kroków podczas jedego treningu. Do tego należy wykorzystać czujnk Akcelerometr. Czujnik ten mierzy przyspieszenie w trzech osiach (płaszczyznach): X, Y i Z, co oznacza, że rejestruje zmiany prędkości i kierunku ruchu telefonu w trzech wymiarach przestrzeni.
+    \item \textbf{Zaznaczanie przebytej trasy na mapie} - Aplikacja ma za zadanie pokazywać na bieżąco na mapie przebytą trase zaznaczjąć ją linią (Od punktu w którym trening został rozpoczęty, aż do punktu w którym trening zostanie zakończony). Żeby wykonać tą funckje należy zintegrować aplikacje z usługą dostarczającą mapy, w tym wypadku będzie to OpenStreetMap. Należy również ustawić interwał aktualizacji lokalizacji co 6-8 sekund w celu zmniejszenia zużycia baterii 
+    \item \textbf{Prędkość poruszania się} - Aplikacja wyświetla prędkość z jaką użytkownik porusza się w danym momencie, do tej funkcji należy również wykorzystać czujnik GPS, 
+    \item \textbf{Licznik spalonych kalorii} - Aplikacja po zakończonym trenningu ma pokazywać spalone kalorie podczas jednostki treningowej. Do tego będzie korzystała ze wzoru:
+    \\
+    \\
+    Spalone kalorie = MET × masa ciała [kg] × czas 
+    \\
+    \\
+    Gdzie wartość MET jest zależna od rodzaju aktywności i jej intensywności dla przykładu, średnia prędkość biegu podczs treningu wynosiła 8km/h to wartość MET = 9. Użytkownik na wstępie będzie musiał podać swoje parametry takie jak: waga, wzrost, wiek, płeć.
+    \item \textbf{Liczenie czasu wykonywanej aktywności} - Aplikacja liczy czas od momentu startu aktywnośći aż do jego zakończenia  
+
+    \item \textbf{Zapisywanie historii aktywności fizycznych} - Aplikacja zapisuje do bazy danych hostorię jednostek treningowych.
+    \item \textbf{Podsumowanie} - Aplikacja w każdą sobote wysyła tygodniowe podsumowanie aktywności fizycznych. Zlicza ile w danym tygodniu zostało przebiegniętych kilometrów, ile zostało zrobionych kroków, ile zostało spaloncyh Kalorii.
+    \item \textbf{Funkcja podjaśniania aplikacji} - Aplikacja dostosowuje jasność aplikacji dla lepszego komfortu użytkownika w zależności od naświetlenia. W momencie kiedy czujnik wykryje że jest wysokie natężenie światła aplikacja stanie się jaśniejsza.
+\end{itemize}
+
+
